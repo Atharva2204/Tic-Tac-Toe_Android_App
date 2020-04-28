@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tictactoe_picyourside">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogrp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_btn1"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="410dp"
+            android:checked="true"
+            android:buttonTint="@color/orange"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_btn2"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="135dp"
+            android:buttonTint="@color/orange"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cont"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/rounded_button"/>
+
+</RelativeLayout>
