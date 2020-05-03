@@ -4,17 +4,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
 public class withafriend_picyourside extends AppCompatActivity
 {
-    Button cont;
+    CardView cardview;
     TextInputEditText player1,player2;
     String player1_name,player2_name;
 
@@ -24,11 +23,11 @@ public class withafriend_picyourside extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.withafriend_picyourside);
 
-        cont = findViewById(R.id.cont);
+        cardview = (CardView) findViewById(R.id.card_view);
         player1 = findViewById(R.id.player1);
         player2 = findViewById(R.id.player2);
 
-        cont.setOnClickListener(new View.OnClickListener()
+        cardview.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -43,5 +42,8 @@ public class withafriend_picyourside extends AppCompatActivity
                 finish();
             }
         });
+
+        //cardview.setBackgroundResource(R.drawable.gradient);
+        //cardview.setRotationX(90);
     }
 }

@@ -82,20 +82,20 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
+        android:layout_width="320dp"
         android:layout_height="350dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:layout_marginTop="240dp"
-        android:layout_marginLeft="45dp"
+        android:layout_marginLeft="40dp"
         app:cardCornerRadius="20dp"
-        app:cardElevation="8dp"
-        android:layout_weight="1">
+        app:cardElevation="8dp">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:src="@drawable/ask2"/>
+            android:src="@drawable/ask2"
+            android:layout_marginLeft="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,23 +109,25 @@
                 android:background="@null"
                 android:scaleType="fitXY"
                 android:layout_marginTop="27dp"
-                android:layout_marginLeft="8dp"/>
+                android:layout_marginLeft="15dp"/>
 
             <ImageButton
                 android:id="@+id/btn_01"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="30dp"/>
 
             <ImageButton
                 android:id="@+id/btn_02"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="27dp"/>
 
         </LinearLayout>
 
@@ -137,27 +139,30 @@
 
             <ImageButton
                 android:id="@+id/btn_10"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="12dp"/>
 
             <ImageButton
                 android:id="@+id/btn_11"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="30dp"/>
 
             <ImageButton
                 android:id="@+id/btn_12"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="27dp"/>
 
         </LinearLayout>
 
@@ -169,27 +174,30 @@
 
             <ImageButton
                 android:id="@+id/btn_20"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"/>
 
             <ImageButton
                 android:id="@+id/btn_21"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
 
             <ImageButton
                 android:id="@+id/btn_22"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@null"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
 
         </LinearLayout>
 
@@ -198,7 +206,18 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button_reset"/>
+        android:id="@+id/button_reset"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="190dp"
+        android:text="RESET"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="40dp"/>
 
     <ImageButton
         android:layout_width="100dp"

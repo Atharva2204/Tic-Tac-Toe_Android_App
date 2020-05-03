@@ -1,6 +1,7 @@
 package com.example.tic_tac_toe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
 {
-    Button singleplayer,withafriend;
+    CardView cardView1,cardView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -18,10 +19,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        singleplayer = findViewById(R.id.singleplayer);
-        withafriend = findViewById(R.id.withafriend);
+        cardView1 = (CardView) findViewById(R.id.card_view1);
+        cardView2 = (CardView) findViewById(R.id.card_view2);
 
-        singleplayer.setOnClickListener(new View.OnClickListener()
+        cardView1.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        withafriend.setOnClickListener(new View.OnClickListener()
+        cardView2.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
