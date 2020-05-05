@@ -109,7 +109,6 @@ public class withafriend_game extends AppCompatActivity implements View.OnClickL
 
     }
 
-
         @Override
         public void onClick(View v)
         {
